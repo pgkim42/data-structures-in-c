@@ -15,6 +15,7 @@
 ├── chapter05/  # 큐 (Queue)
 ├── chapter06/  # 연결 리스트 I
 ├── chapter07/  # 연결 리스트 II
+├── chapter08/  # 트리 (Tree)
 └── CMakeLists.txt
 ```
 
@@ -29,7 +30,8 @@
 | 05 | 큐            | ✅   |
 | 06 | 연결 리스트 I     | ✅   |
 | 07 | 연결 리스트 II    | ✅   |
-  
+| 08 | 트리           | ✅   |
+
 
 ## Chapter 02: 순환 (Recursion)
 
@@ -134,6 +136,36 @@
   - 연산: init_queue, is_empty, is_full(항상 0), enqueue, dequeue, peek, clear
   - 시간 복잡도: 모든 연산 O(1)
   - 장점: enqueue/dequeue 모두 O(1), 크기 제한 없음
+
+## Chapter 08: 트리 (Tree)
+
+### 이진 트리 (Binary Tree)
+- **binary_tree.c**: 포인터 기반 이진 트리
+  - TreeNode 구조체 (data, left, right)
+  - 기본 연산: create_node, is_empty, set_left/right, get_left/right
+  - 순회 (Traversal): preorder, inorder, postorder
+  - 반복적 순회: preorder_iterative (스택 사용)
+  - 레벨 순회: level_order (큐 사용, BFS)
+  - 유틸리티: get_node_count, get_height, get_leaf_count
+  - 고급 연산: copy_tree (트리 복사), is_equal (동일성 검사)
+  - 시간 복잡도: 순회 O(n), 탐색 O(n)
+
+### 수식 트리 (Expression Tree)
+- **expression_tree.c**: 산술 표현식을 트리로 표현
+  - ExprNode 구조체 (op, is_operator, left, right)
+  - make_expression_tree: 후위 표기식으로부터 트리 생성
+  - evaluate: 수식 트리 계산 (후위 순회)
+  - 표기법 출력: print_infix, print_prefix, print_postfix
+  - 예: (3+4)*(5-2) = 21, 후위 표기식 "34+52-*"
+
+### 이진 탐색 트리 (Binary Search Tree)
+- **binary_search_tree.c**: BST 속성 (왼쪽 < 루트 < 오른쪽)
+  - BSTNode 구조체 (key, left, right)
+  - 연산: bst_insert (삽입), bst_search (탐색), bst_delete (삭제)
+  - 삭제 3가지 케이스: 리프, 자식 1개, 자식 2개 (후계자 대체)
+  - 보조 연산: bst_find_min, bst_find_max
+  - 중위 순회 시 오름차순 정렬 출력
+  - 시간 복잡도: 평균 O(log n), 최악 O(n)
 
 ## 빌드
 

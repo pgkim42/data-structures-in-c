@@ -82,6 +82,13 @@ add_executable(doubly_linked_list    chapter07/doubly_linked_list.c)  # 이중 �
 add_executable(linked_stack          chapter07/linked_stack.c)  # 연결 리스트 기반 스택
 add_executable(linked_queue          chapter07/linked_queue.c)  # 연결 리스트 기반 큐
 
+# ------------------------------------------------------------
+# Chapter 08: 트리 (Tree)
+# ------------------------------------------------------------
+add_executable(binary_tree    chapter08/binary_tree.c)   # 이진 트리 (포인터 기반)
+add_executable(expression_tree chapter08/expression_tree.c) # 수식 트리
+add_executable(binary_search_tree chapter08/binary_search_tree.c) # 이진 탐색 트리
+
 # ============================================================
 # CLion 사용법
 # ============================================================

@@ -74,6 +74,14 @@ add_executable(singly_linked_list     chapter06/singly_linked_list.c)    # 단�
 add_executable(polynomial_linked_list chapter06/polynomial_linked_list.c) # 다항식 연결 리스트
 target_link_libraries(polynomial_linked_list PRIVATE m)                   # 수학 라이브러리
 
+# ------------------------------------------------------------
+# Chapter 07: 연결 리스트 II (Linked List II)
+# ------------------------------------------------------------
+add_executable(circular_linked_list chapter07/circular_linked_list.c)  # 원형 연결 리스트
+add_executable(doubly_linked_list    chapter07/doubly_linked_list.c)  # 이중 연결 리스트
+add_executable(linked_stack          chapter07/linked_stack.c)  # 연결 리스트 기반 스택
+add_executable(linked_queue          chapter07/linked_queue.c)  # 연결 리스트 기반 큐
+
 # ============================================================
 # CLion 사용법
 # ============================================================

@@ -14,6 +14,7 @@
 ├── chapter04/  # 스택
 ├── chapter05/  # 큐 (Queue)
 ├── chapter06/  # 연결 리스트 I
+├── chapter07/  # 연결 리스트 II
 └── CMakeLists.txt
 ```
 
@@ -27,6 +28,7 @@
 | 04 | 스택           | ✅   |
 | 05 | 큐            | ✅   |
 | 06 | 연결 리스트 I     | ✅   |
+| 07 | 연결 리스트 II    | ✅   |
   
 
 ## Chapter 02: 순환 (Recursion)
@@ -101,6 +103,37 @@
     - mult_poly: 두 다항식 곱셈 O(n×m), 이중 루프
     - eval_poly: x값 대입 계산 O(n)
   - 출력: 3x^6 + 7x^3 - 2x^2 + 5 형태
+
+## Chapter 07: 연결 리스트 II
+
+### 원형 연결 리스트 (Circular Linked List)
+- **circular_linked_list.c**: 마지막 노드가 첫 노드를 가리키는 원형 구조
+  - tail 포인터만 유지 (tail->link가 head)
+  - 연산: init, is_empty, get_length, insert_first, insert_last, insert, delete_first, delete_last, delete, get_entry, replace, search, print_list, clear
+  - 시간 복잡도: insert_first O(1), insert_last O(1), delete_first O(1), delete_last O(n)
+  - 경계 조건: 빈 리스트 (tail==NULL), 단일 노드 (tail->link==tail)
+  - 응용: CPU 스케줄링 (Round Robin)
+
+### 이중 연결 리스트 (Doubly Linked List)
+- **doubly_linked_list.c**: 양방향 링크를 가진 연결 리스트
+  - DListNode 구조체 (prev, next)
+  - 연산: init, is_empty, get_length, insert_first, insert_last, insert, delete_first, delete_last, delete, get_entry, replace, search, print_list, print_reverse, reverse, clear
+  - 시간 복잡도: insert_first/last O(1), delete_first/last O(1), reverse O(1)
+  - 장점: 양방향 순회, 역방향 출력, delete_last O(1), reverse O(1) (head, tail만 swap)
+
+### 연결 리스트 기반 스택 (Linked Stack)
+- **linked_stack.c**: 단일 연결 리스트로 구현한 스택
+  - StackNode 구조체 (data, link), StackType (top)
+  - 연산: init_stack, is_empty, is_full(항상 0), push, pop, peek, clear
+  - 시간 복잡도: 모든 연산 O(1)
+  - 장점: 크기 제한 없음, 동적 할당
+
+### 연결 리스트 기반 큐 (Linked Queue)
+- **linked_queue.c**: 이중 연결 리스트로 구현한 큐
+  - QueueNode 구조체 (prev, next), QueueType (front, rear)
+  - 연산: init_queue, is_empty, is_full(항상 0), enqueue, dequeue, peek, clear
+  - 시간 복잡도: 모든 연산 O(1)
+  - 장점: enqueue/dequeue 모두 O(1), 크기 제한 없음
 
 ## 빌드
 

@@ -59,7 +59,12 @@ add_executable(maze                chapter04/maze.c)                # 미로찾�
 # ------------------------------------------------------------
 # Chapter 05: 큐 (Queue)
 # ------------------------------------------------------------
-add_executable(chapter05 chapter05/main.c)
+add_executable(chapter05         chapter05/main.c)
+add_executable(linear_queue      chapter05/linear_queue.c)           # 선형 큐
+add_executable(circular_queue    chapter05/circular_queue.c)          # 원형 큐
+add_executable(circular_queue_sim chapter05/circular_queue_sim.c)     # 원형 큐 시뮬레이션
+add_executable(deque               chapter05/deque.c)                   # 덱 (Double-Ended Queue)
+add_executable(bank_simulation     chapter05/bank_simulation.c)         # 은행 서비스 시뮬레이션
 
 # ============================================================
 # CLion 사용법

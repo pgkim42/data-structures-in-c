@@ -24,7 +24,7 @@
 | 02 | 순환              | ✅   |
 | 03 | 배열, 구조체, 포인터    | ✅   |
 | 04 | 스택              | ✅   |
-| 05 | 큐               | 🔄   |
+| 05 | 큐               | ✅   |
 
 ## Chapter 02: 순환 (Recursion)
 
@@ -55,6 +55,21 @@
 - **postfix_eval.c**: 후위 표기 수식 계산
 - **infix_to_postfix.c**: 중위 표기 → 후위 표기 변환
 - **maze.c**: 스택을 이용한 미로찾기 (백트래킹)
+
+## Chapter 05: 큐 (Queue)
+
+### 문서
+- **ADT_Queue.md**: 큐 추상 데이터 타입 명세
+- **ADT_Deque.md**: 덱 추상 데이터 타입 명세
+
+### 기본 구현
+- **linear_queue.c**: 선형 큐 (배열 기반, front 락 발생)
+- **circular_queue.c**: 원형 큐 (순환으로 공간 효율 개선)
+
+### 응용 문제
+- **circular_queue_sim.c**: 난수 기반 큐 시뮬레이션 (20% 삽입, 10% 삭제)
+- **deque.c**: 덱 (Double-Ended Queue) - 양쪽 끝에서 삽입/삭제 가능
+- **bank_simulation.c**: 은행 서비스 시뮬레이션 (다중 서버 큐, 창구 2개)
 
 ## 빌드
 

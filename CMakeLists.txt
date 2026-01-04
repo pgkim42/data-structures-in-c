@@ -66,6 +66,14 @@ add_executable(circular_queue_sim chapter05/circular_queue_sim.c)     # 원형 �
 add_executable(deque               chapter05/deque.c)                   # 덱 (Double-Ended Queue)
 add_executable(bank_simulation     chapter05/bank_simulation.c)         # 은행 서비스 시뮬레이션
 
+# ------------------------------------------------------------
+# Chapter 06: 연결 리스트 (Linked List)
+# ------------------------------------------------------------
+add_executable(linked_list_array       chapter06/linked_list_array.c)      # 배열 기반 연결 리스트
+add_executable(singly_linked_list     chapter06/singly_linked_list.c)    # 단일 연결 리스트
+add_executable(polynomial_linked_list chapter06/polynomial_linked_list.c) # 다항식 연결 리스트
+target_link_libraries(polynomial_linked_list PRIVATE m)                   # 수학 라이브러리
+
 # ============================================================
 # CLion 사용법
 # ============================================================

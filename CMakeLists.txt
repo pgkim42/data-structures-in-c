@@ -89,6 +89,14 @@ add_executable(binary_tree    chapter08/binary_tree.c)   # 이진 트리 (포인
 add_executable(expression_tree chapter08/expression_tree.c) # 수식 트리
 add_executable(binary_search_tree chapter08/binary_search_tree.c) # 이진 탐색 트리
 
+# ------------------------------------------------------------
+# Chapter 09: 힙 (Heap)
+# ------------------------------------------------------------
+add_executable(heap            chapter09/heap.c)            # Max-Heap
+add_executable(heap_sort       chapter09/heap_sort.c)       # 힙 정렬
+add_executable(lpt_scheduling  chapter09/lpt_scheduling.c)  # LPT 스케줄링
+add_executable(huffman         chapter09/huffman.c)         # 허프만 코딩
+
 # ============================================================
 # CLion 사용법
 # ============================================================

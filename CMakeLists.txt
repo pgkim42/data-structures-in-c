@@ -97,6 +97,16 @@ add_executable(heap_sort       chapter09/heap_sort.c)       # 힙 정렬
 add_executable(lpt_scheduling  chapter09/lpt_scheduling.c)  # LPT 스케줄링
 add_executable(huffman         chapter09/huffman.c)         # 허프만 코딩
 
+# ------------------------------------------------------------
+# Chapter 10: 그래프 (Graph)
+# ------------------------------------------------------------
+add_executable(adj_matrix      chapter10/adj_matrix.c)      # 인접 행렬 그래프
+add_executable(adj_list        chapter10/adj_list.c)        # 인접 리스트 그래프
+add_executable(dfs_matrix      chapter10/dfs_matrix.c)      # DFS (인접 행렬)
+add_executable(dfs_list        chapter10/dfs_list.c)        # DFS (인접 리스트)
+add_executable(bfs_matrix      chapter10/bfs_matrix.c)      # BFS (인접 행렬)
+add_executable(bfs_list        chapter10/bfs_list.c)        # BFS (인접 리스트)
+
 # ============================================================
 # CLion 사용법
 # ============================================================

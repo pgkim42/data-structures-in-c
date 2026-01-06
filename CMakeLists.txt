@@ -107,6 +107,12 @@ add_executable(dfs_list        chapter10/dfs_list.c)        # DFS (인접 리스
 add_executable(bfs_matrix      chapter10/bfs_matrix.c)      # BFS (인접 행렬)
 add_executable(bfs_list        chapter10/bfs_list.c)        # BFS (인접 리스트)
 
+# ------------------------------------------------------------
+# Chapter 11: 그래프 (Graph) II
+# ------------------------------------------------------------
+add_executable(kruskal          chapter11/kruskal.c)        # 크루스칼 알고리즘
+add_executable(prim             chapter11/prim.c)           # 프림 알고리즘
+
 # ============================================================
 # CLion 사용법
 # ============================================================

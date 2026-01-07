@@ -116,6 +116,18 @@ add_executable(dijkstra         chapter11/dijkstra.c)       # 다익스트라 �
 add_executable(floyd            chapter11/floyd.c)          # 플로이드-워셜 알고리즘 (모든 쌍 최단 경로)
 add_executable(topological_sort chapter11/topological_sort.c) # 위상 정렬
 
+# ------------------------------------------------------------
+# Chapter 12: 정렬 (Sorting)
+# ------------------------------------------------------------
+add_executable(selection_sort   chapter12/selection_sort.c)  # 선택 정렬
+add_executable(insertion_sort   chapter12/insertion_sort.c)  # 삽입 정렬
+add_executable(bubble_sort      chapter12/bubble_sort.c)     # 버블 정렬
+add_executable(shell_sort       chapter12/shell_sort.c)      # 쉘 정렬
+add_executable(merge_sort       chapter12/merge_sort.c)      # 병합 정렬
+add_executable(quick_sort       chapter12/quick_sort.c)      # 퀵 정렬
+add_executable(heap_sort        chapter12/heap_sort.c)       # 힙 정렬
+add_executable(radix_sort       chapter12/radix_sort.c)      # 기수 정렬
+
 # ============================================================
 # CLion 사용법
 # ============================================================

@@ -110,8 +110,11 @@ add_executable(bfs_list        chapter10/bfs_list.c)        # BFS (인접 리스
 # ------------------------------------------------------------
 # Chapter 11: 그래프 (Graph) II
 # ------------------------------------------------------------
-add_executable(kruskal          chapter11/kruskal.c)        # 크루스칼 알고리즘
-add_executable(prim             chapter11/prim.c)           # 프림 알고리즘
+add_executable(kruskal          chapter11/kruskal.c)        # 크루스칼 알고리즘 (MST)
+add_executable(prim             chapter11/prim.c)           # 프림 알고리즘 (MST)
+add_executable(dijkstra         chapter11/dijkstra.c)       # 다익스트라 알고리즘 (최단 경로)
+add_executable(floyd            chapter11/floyd.c)          # 플로이드-워셜 알고리즘 (모든 쌍 최단 경로)
+add_executable(topological_sort chapter11/topological_sort.c) # 위상 정렬
 
 # ============================================================
 # CLion 사용법

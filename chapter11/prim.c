@@ -41,6 +41,12 @@ MinHeap *heap_create(int capacity) {
     MinHeap *h = (MinHeap *)malloc(sizeof(MinHeap));
     h->data = (HeapNode *)malloc(capacity * sizeof(HeapNode));
     h->pos = (int *)malloc(capacity * sizeof(int));
+
+    // pos 배열 초기화: -1은 "힙에 없음"을 의미
+    for (int i = 0; i < capacity; i++) {
+        h->pos[i] = -1;
+    }
+
     h->size = 0;
     h->capacity = capacity;
     return h;
@@ -190,7 +196,8 @@ bool heap_is_empty(const MinHeap *h) {
  * @return        힙에 있으면 true
  */
 bool heap_contains(const MinHeap *h, int vertex) {
-    return h->pos[vertex] < h->size;
+    int pos = h->pos[vertex];
+    return pos >= 0 && pos < h->size;
 }
 
 // ============================================================

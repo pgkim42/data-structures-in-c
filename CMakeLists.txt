@@ -125,8 +125,15 @@ add_executable(bubble_sort      chapter12/bubble_sort.c)     # 버블 정렬
 add_executable(shell_sort       chapter12/shell_sort.c)      # 쉘 정렬
 add_executable(merge_sort       chapter12/merge_sort.c)      # 병합 정렬
 add_executable(quick_sort       chapter12/quick_sort.c)      # 퀵 정렬
-add_executable(heap_sort        chapter12/heap_sort.c)       # 힙 정렬
+add_executable(heap_sort_v2     chapter12/heap_sort_v2.c)       # 힙 정렬
 add_executable(radix_sort       chapter12/radix_sort.c)      # 기수 정렬
+
+# ------------------------------------------------------------
+# Chapter 13: 탐색 (Search)
+# ------------------------------------------------------------
+add_executable(binary_search             chapter13/binary_search.c)             # 이진 탐색
+add_executable(indexed_sequential_search chapter13/indexed_sequential_search.c) # 색인 순차 탐색
+add_executable(interpolation_search     chapter13/interpolation_search.c)     # 보간 탐색
 
 # ============================================================
 # CLion 사용법
